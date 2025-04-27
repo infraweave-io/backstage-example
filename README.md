@@ -84,10 +84,11 @@ import LibraryBooks from '@material-ui/icons/LibraryBooks';
 +        <SidebarItem icon={DeviceHub} to="infraweave/overview" text="InfraWeave" />
 ...
 ```
+1. Done! Try it out by running `yarn start`. It should now look like this: ![](./images/success.png)
 
 ### Set up backend-plugin (optional)
 
-The backend-plugin is optional but is required if you want to allow creating merge requests from the module/stack pages using the ["Click to deploy" button](https://preview.infraweave.io/functionality/examples/#backstage)
+The backend-plugin is optional but is required if you want to allow creating merge requests from the module/stack pages using the ["Click to deploy" button](https://preview.infraweave.io/functionality/examples/#backstage): ![](./images/pull-request.png)
 
 1. Install the backend plugin by running: `yarn add @infraweave/backstage-plugin-backend`
 1. Add the plugin to `backstage-scaffold/packages/backend/src/index.ts`
