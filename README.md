@@ -1,8 +1,21 @@
 
 # Getting started
 
+Read more about the setup [here](https://preview.infraweave.io/integration/backstage/) to understand how it is set up.
 
+## Prerequisites
 
+To have access to your platform you need to also run the webserver. Given that you have credentials for your central AWS account in your environment variables and you use a valid region, you can start it like this:
+
+```bash
+docker run --rm \
+  -p 8081:8081 -e PROVIDER=aws \
+  -e AWS_ACCESS_KEY_ID="${AWS_ACCESS_KEY_ID}" \
+  -e AWS_SECRET_ACCESS_KEY="${AWS_SECRET_ACCESS_KEY}" \
+  -e AWS_SESSION_TOKEN="${AWS_SESSION_TOKEN}" \
+  -e AWS_REGION=us-west-2 \
+  infraweave/webserver-openapi:latest
+```
 
 ## Alternative 1 - Use directly
 
