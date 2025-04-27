@@ -50,8 +50,7 @@ proxy:
     '/api/infraweave':
       target: 'http://localhost:8081' # Set to localhost to test locally
       changeOrigin: true
-      logLevel: 'debug'
-      credentials: 'dangerously-allow-unauthenticated' # Dont have any authenication right now..
+      credentials: 'dangerously-allow-unauthenticated' # ONLY for local testing
       pathRewrite:
         '^/api/proxy/api/infraweave': ''
 
