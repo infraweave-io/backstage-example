@@ -25,6 +25,7 @@ If you just want to run it to try it out, everything is ready in the `backstage-
 
 ```
 cd backstage-scaffold
+yarn install
 yarn start
 ```
 
